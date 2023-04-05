@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, #fff;
+}
+body{
+    background-color: rgba(7, 1, 22, 0.849);
+}
+.ecran{
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+@media screen and (min-width: 1024px){      
+.letf {
+    display: grid;
+  }
+}
+.item{
+    max-width: 100%;
+    max-height: 100%;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    padding: 50px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+  label {
+    align-items: center;
+    float: left;
+    width: 150px;
+    white-space: nowrap;
+}
+input {
+    display: block;
+    overflow: hidden;
+    width: 150px;
+}
+textarea{
+  display: block;
+  overflow: hidden;
+  width: 150px;
+}
+.reseau{ 
+  display:flex;
+  flex-direction: row;
+  gap: 10px;
+  grid-auto-rows: 100px; 
+  align-items: center;
+  justify-content:space-around;
+}
+.grid-item2{
+    text-align:center;
+    color: #fff;
+    grid-auto-rows: max-content;
+}
+.grid-item1{
+    text-align:center;
+}
+.item{
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    margin-top: 1%;
+}
+.item1{
+    display: none;
+    position: absolute;
+    float: right;
+}
+.item img{
+    width: 190px;
+    border-radius: 50%;
+}
+.item h2{
+    font-size: 20px;
+    font-weight: 600px;
+    margin-top: 20px;
+    color: #fff;
+}
+.item p{
+    font-size: 20px;
+    margin: 10px auto;
+    max-width: 330px;
+    color: #fff;
+}
+.item1{
+    text-align: right;
+    width: 10%;
+    height: 10%;
+    margin-right: 35px;
+    background: rgba(255,255,255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    margin-top: 1%;
+}
+.item .reseau img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+.item.reseau img:hover{
+    background:rgb(240,90, 195);
+}
+.button{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background: #fff;
+    color: rgb(226, 59, 184);
+    border-radius: 100px;
+    margin: 30px 0 10px;
+    color: hwb(0 2% 98%);
+}
+.contact img{
+    height: 50px;
+    width: 50px;
+    justify-content: space-between;
+}
+  nav{
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    position: static;
+    top: 0px;
+  }
+  nav ul{
+    list-style-type: none;
+  }
+  nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
+  nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+  }
+  nav a:hover{
+    color: rgb(239, 239, 245);
+    border-bottom: 2px solid gold;
+  }
+  nav > ul li:hover{
+    display: block;
+  }
+  li{
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+  a{
+    padding: 10px;
+    border-bottom: none;
+  }
+  #item{
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    margin-top: 1%;
+}
+#item img{
+    width: 300px;
+    border-radius: 5%;
+}
+.in> input{
+  width: 52px;
+  margin-left: 10%;
+}
+#item{
+  max-width: 100%;
+  max-height: 100%;
+  color: rgb(255, 255, 255);
+  text-align:center;
+  padding: 50px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.titre> p{
+  color: #0a0a0a;
+  margin-top: 12px;
+  border-radius: 12px;
+  border-color: aqua;
+  margin-left: 5%;
+  background-color: aquamarine;
+  width: 360px;
+}
+#item{
+  display:flex;
+  flex-direction: row;
+  gap: 10px;
+  grid-auto-rows: 100px; 
+  align-items: center;
+  justify-content:space-around;
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  outline: dashed 1px black;
+  position: relative;
+}
+@keyframes defilement1{
+  0%{transform: translate(0,0);}
+  100%{transform: translate(-2880px,0);}
+}
+@keyframes defilement2{
+  0%{transform: translate(0,0);}
+  100%{transform: translate(-75%,0);}
+}
+.img1:hover, .img2:hover, .img3:hover{
+  animation-play-state: paused;
+}
+ .mag >img{
+  animation: defilement1 10s linear infinite;
+ }
+ @keyframes fondu{
+  0%{background-image: 0% ;}
+  33.33%{background-image: 33.33% ;}
+  66.67%{background-image: 66.67%;}
+  100%{background-image: 100% ;}
+}
